@@ -1,3 +1,3 @@
 # Professional README Generator Starter Code
 
-[How to create a Professional README](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide)
+This is a README generator that prompts with multiple questions and outputs a README file using a Table of Contents.
