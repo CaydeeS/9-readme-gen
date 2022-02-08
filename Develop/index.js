@@ -56,12 +56,25 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-    
-}
+const writeToFile = fileName => {
+    return new Promise((resolve, reject) => {
+        fs.writeToFile('./dist/README-gen.md', fileName, err => {
+            if (err) {
+                reject(err);
+                return;
+            }
+
+            resolve({
+                ok: true,
+                message: 'Created file README-gen.md'
+            });
+        });
+    });
+};
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+}
 
 // Function call to initialize app
 init();
